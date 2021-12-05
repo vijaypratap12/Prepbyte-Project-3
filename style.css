@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+i {
+  margin-right: 25px;
+  color: red;
+  font-size: 35px;
+  opacity: 0.7;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin-left: 15px;
+}
+label {
+  font-size: 23px;
+  opacity: 0.8;
+}
+
+.main-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* border: 3px solid green; */
+}
+.heading-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.heading {
+  font-size: 30px;
+  /* border: 3px solid red; */
+  position: relative;
+  right: 80px;
+}
+
+.add-task {
+  /* border: 3px solid red; */
+  font-size: 30px;
+  position: relative;
+  left: 50px;
+}
+
+.task-container {
+  display: flex;
+}
+
+.card {
+  border: 1px solid red;
+  margin: 0px 50px;
+  height: 350px;
+  width: 220px;
+  border-radius: 10px;
+  box-shadow: 23px 23px 60px #c0bebe, -23px -23px 60px #ffffff;
+}
+
+.card p {
+  text-align-last: center;
+  color: red;
+  font-size: 25px;
+  margin-left: 20px;
+}
+
+.card p::after {
+  content: "";
+  background-color: red;
+  width: 190px;
+  height: 2.5px;
+  position: absolute;
+  transform: translate(-100%);
+  top: 273px;
+}
+
+.card-heading-box {
+  border-bottom: 1px solid grey;
+  margin-left: 35px;
+}
+
+.card-heading-box h3 {
+  color: red;
+  font-weight: 100;
+  font-size: 26px;
+  opacity: 0.7;
+}
+
+.card-heading-box a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 800px) and (min-width: 300px) {
+  .heading-container {
+    display: flex;
+  }
+
+  .heading {
+    font-size: 25px;
+    position: relative;
+    right: 0;
+  }
+
+  .add-task {
+    font-size: 30px;
+    position: relative;
+    left: 20px;
+  }
+
+  .task-container {
+    flex-direction: column;
+  }
+
+  .card {
+    margin: 20px 0px;
+    height: 80px;
+    width: 345px;
+    border-radius: 10px;
+    box-shadow: 23px 23px 60px #c0bebe, -23px -23px 60px #ffffff;
+    border: none;
+  }
+
+  .card-heading-box {
+    /* display: none; */
+    border: none;
+  }
+
+  .card-heading-box h3 {
+    color: rgb(88, 80, 80);
+    font-weight: 100;
+    font-size: 26px;
+    opacity: 0.7;
+  }
+  .card p {
+    display: none;
+  }
+
+  .card p::after {
+    display: none;
+  }
+
+  input[type="checkbox"] {
+    display: none;
+  }
+  label {
+    display: none;
+  }
+}
