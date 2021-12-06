@@ -34,8 +34,12 @@ html {
   box-shadow: 23px 23px 60px #c0bebe, -23px -23px 60px #ffffff;
   z-index: 2;
 }
+a{
+  text-decoration: none;
+}
 
 .heading h1 {
+  border:0px solid green;
   font-size: 30px;
   color: red;
   font-weight: 100;
@@ -49,7 +53,7 @@ input[type="text"] {
   border: 1px solid red;
 }
 
-a {
+#addbtn {
   text-decoration: none;
   background-color: red;
   color: white;
